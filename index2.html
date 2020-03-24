@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Práctica CFJ</title>
+		<meta charset="UTF-8" />
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<style>
+			body {
+				background-image:url(fondo.jpg);
+				margin: 0;
+				font-size: 100%;
+				font-family: "ptserif", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				font-weight: 400;
+				/*background-color: #000000;*/
+				position: relative;
+				color: #030303;
+				background: #ffffff;
+
+			}
+			nav, .dropdown-content {
+				margin: 0;
+				display: block;
+				background-color: #030303; /*Cambiar color, ahora mismo de prueba*/
+
+			}
+			ul {
+				list-style-type: none;
+				display: flex;
+				flex: 20%;
+				margin: 0;
+				padding: 20px;
+				justify-content: center;
+
+			}
+			a {
+				text-decoration: none;
+				display: block;
+				padding: 10px 20px;
+   				background: transparent;
+				color: #e10339;
+    			-webkit-transition: all 0.2s;
+   				-moz-transition: all 0.2s;
+   				transition: all 0.2s;
+
+			}
+			a:active, a:link, a:visited {
+				color: #ffffff;
+				
+			}
+			a:hover {
+				color: #ffffff; /*Ajustar el over*/
+				background-color: #df84e1;
+				display: block;
+
+			}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				z-index: 1;
+				border-radius: 20px;
+				top: 55px;
+				color: #ffffff; 
+				background-color: #000000; /*Fondo de la caja*/
+			}
+			li {
+				min-width: 200px;
+
+			}
+			#mainmenu > li {
+				text-align: left;
+
+			}
+			.fa-angle-up {
+				display: none;
+			}
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			.dropdown:hover .fa-angle-up {
+				display: inline;
+			}
+			.dropdown:hover .fa-angle-down {
+				display: none;
+			}
+			#mainmenu {
+				position: relative;
+			}
+			.active {
+				display: block;
+				z-index: 1;
+			}
+			table {
+				width:300px;
+				height:100px;
+			}
+			#box2{
+				position: relative;
+				display: flex;
+				flex: 20%;
+			}
+			.estilos{
+				display: flex;
+				flex: 25%;
+			}
+			.logo{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</head>
+	<script>
+	function bgChange(bg) {
+  		document.body.style.background = bg;
+	}
+	</script>
+	<body>
+		<nav>
+			<ul id="mainmenu">
+				<li class="active"><<img class="logo" src="https://demo.rockettheme.com/live/joomla/clarity/templates/rt_clarity/images/logo.svg">LOGO</a></li>
+				<li class="active"><a href="#">HOME </a></li>
+				<li class="dropdown"><a href="#">FEATURES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+					<ul class="dropdown-content">
+						<li><a href="#"> OVERVIEW </a></li>
+						<li><a href="#"> PARTICLES </a></li>
+						<li><a href="#"> TYPOGRAPHY </a></li>
+						<li><a href="#"> BLOCK VARIATIONS </a></li>
+						<li><a href="#"> DOCUMENTATION </a></li>
+						<li><a href="#"> FORUM SUPPORT </a></li>
+						<li><a href="#"> DOWNLOAD </a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#">PAGES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+					<div>
+						<div>
+							<ul class="dropdown-content">
+								<li><a href="#">ABOUT US</a></li>
+								<li><a href="#">PRICING</a></li>
+								<li><a href="#">PORTFOLIO</a></li>
+								<li><a href="#">BLOG</a></li>
+								<li><a href="#">CONTACT</a></li>
+								<li><a href="#">ERROR</a></li>
+								<li><a href="#">COMING SOON</a></li>
+								<li><a href="#">OFFLINE</a></li>
+							</ul>
+						</div>
+					</div>						
+				</li>
+				<li class="dropdown"><a href="#">STYLES </a>
+					<table class="dropdown-content">
+					  <tr>
+					    <td onmouseover="bgChange(this.style.backgroundColor)" 
+					    	onmouseout="bgChange('transparent')"
+					    	style="background-color:#e10339">
+					    	<img src="preset1.jpg">
+					    </td>
+					    <td onmouseover="bgChange(this.style.backgroundColor)" 
+					    	onmouseout="bgChange('transparent')"
+					    	style="background-color:#3595be">
+					    	<img src="preset2.jpg">
+					    </td>
+					    <td onmouseover="bgChange(this.style.backgroundColor)" 
+					    	onmouseout="bgChange('transparent')"
+					    	style="background-color:#42706d">
+					    	<img src="preset3.jpg">
+					    </td>
+					    <td onmouseover="bgChange(this.style.backgroundColor)" 
+					    	onmouseout="bgChange('transparent')"
+					    	style="background-color:#ffcc5f">
+					    	<img src="preset4.jpg">
+					    </td>
+					  </tr>
+					</table>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>
