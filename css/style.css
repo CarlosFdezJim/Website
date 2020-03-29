@@ -1,0 +1,234 @@
+
+/*Creación de estilos imitando a la siguente página: https://demo.rockettheme.com/live/joomla/clarity/ */
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	body{
+		margin: 0%;
+		font-size: 100%;
+		font-family: 'Asap', sans-serif;
+		background-color: #FFF;
+	}
+
+	.logo{
+		color: #FFF;
+		width: 150px;
+		height: 150px;
+		text-align: left;
+	}
+
+	.menu{
+		margin: 0%;
+		position: relative;
+		flex: 20%;
+		z-index: 1;
+		width: 100%;
+		justify-content: center;
+		background-color: #000; /* Color del menú*/
+
+	}
+
+	.menu > ul{
+		margin-top: 50px; 
+		padding: auto;
+		position: center;
+	}
+
+	/*.menu-content{
+		display: none;
+		position: absolute;
+		justify-content: center;
+		margin-bottom: 0 !important;
+	}*/
+
+	ul, li {
+		list-style-type: none;
+		display: flex;
+		flex: 20%;
+		margin: 0;
+		padding: 5px;
+		justify-content: center;
+
+	}
+
+	.menu li a{
+		text-decoration: none;
+		color: #FFF;
+		padding: 5px;
+		display: block;
+
+	}
+
+	.menu-content{
+		display:inline-block;
+		z-index: 1;
+		border-radius: 20px;
+		top: 60px;
+		background-color: #FFF;
+		color: #000;
+		min-width: 50px;
+		padding-bottom: 0.5rem;
+	}
+
+	.menu-content li a {
+		display: block;						/*color y efecto transición*/
+		background-color: #FFF; 
+		color: #000;  
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		transition: all 0.2s;
+	}
+
+	.menu-content li a:hover{
+		background-color: #ffc0cb;
+
+	}
+
+	.menu li:hover > ul{
+		display: block;
+	}
+
+	.menu li ul{
+		display: none;
+		position: absolute;
+		min-width: 140px;
+	}
+
+
+	.menu-content div li > a{
+		flex: 50%;
+		position: relative;
+	}
+
+	.foto1{
+
+		width: 400px;
+		background-position: auto;
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-attachment: scroll;
+		/*background-image:url(https://demo.rockettheme.com/live/joomla/clarity/images/rocketlauncher/home/slideshow/img-01.jpg);*/
+		/*background-image:url(image/fondo.jpg);*/
+		/*background-image: url("https://demo.rockettheme.com/live/joomla/clarity/images/rocketlauncher/home/slideshow/img-02.jpg");*/
+		/*background-image: url("https://demo.rockettheme.com/live/joomla/clarity/images/rocketlauncher/home/slideshow/img-03.jpg");*/
+	}
+
+	.section2{
+		background-image:url("https://demo.rockettheme.com/live/joomla/clarity/images/rocketlauncher/home/header/header-1.jpg");
+		background-image:url("image/header-1.jpg");
+		display: flex;
+		flex: 50%;
+		background-color: #e10339;
+	}
+	.foto2{
+		margin-left: 20%;
+		margin-top: 5%;
+		width: 100px;
+	}
+	#texto2{
+		z-index: 2;
+		color: #FFF;
+		
+	}
+
+	.overlay_text{
+		background-color: transparent;
+		z-index: 3;
+		top: 50px;
+		text-align: left;
+		margin-right: 50%;
+		margin-left: 5%; 
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 1.5;
+		max-width: 500px;
+		opacity: 0.5;
+		margin-bottom: 1.25rem;
+	}
+
+	h3{
+		font-size: 2.2rem;
+		color: #000;
+	}
+	h4{
+		font-family: "Time New Roman";
+		font-size: 1.7rem;
+		color: grey;
+	}
+
+
+
+	/*a{
+		text-decoration: none;
+		display: block;
+		padding: 0px;
+		/*color: #e10339;
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		transition: all 0.2s;
+	}*/
+
+	.piePagina{
+		display: flex;
+		margin-bottom: 0;
+		padding: 10px;
+		background-color: pink;
+		color: white;
+		justify-content: center;
+	}
+	.piePagina div{
+		padding: 5px;
+	}
+
+	.footer{
+		padding: 50px;
+		text-align: center;
+		color: #666666;
+	}
+
+	.boton1{
+		font-size: 23px;
+		font-weight: 500;
+		color: #e10339 !important;
+		padding-bottom: 0px;
+		background: transparent;
+		font-weight: 500;
+		border-radius: 0;
+		border: none;
+		color: #030303;
+		padding: 0;
+
+	}
+
+	/*.piePagina{
+		padding: 10px;
+		width: 20px;
+	}*/
+	/*div, .dropdown-content {
+		margin: 0;
+		display: block;
+		background-color: #030303;
+	}
+
+
+	/*a:active, a:link, a:visited {
+		color: #ffffff;
+
+	}
+	/*a:hover {
+		color: #ffffff; /*Ajustar el over*/
+	/*	background-color: #df84e1;
+		display: block;
+
+	}*/
+
+	/*.menu > ul{
+		opacity: none;
+	}
+	.menu > li {
+		text-align: left;
+	}*/
+
+	
