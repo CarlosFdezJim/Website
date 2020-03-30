@@ -29,7 +29,7 @@ header, .section1, .section7{
 }
 
 
-/*Menu */
+/*Menú */
 
 header{
 	position: absolute;
@@ -49,9 +49,6 @@ header{
 	justify-content: space-between;
 }
 
-/*#menu .logo{
-	min-width: 150px;
-}*/
 #menu .logo img{
 	width: 150px;
 }
@@ -141,10 +138,6 @@ header{
 	
 }
 
-
-
-
-
 #menu ul li:hover > .menu-content-2{
 	display: flex!important;
 
@@ -189,14 +182,11 @@ header{
 	width: 100%;
 }
 
-
-
-
 .provisional{
 	display: none!important;
 }
 
-/*Seccion 1*/
+/*Sección 1*/
 
 .section1{
 	height: 800px;
@@ -243,10 +233,50 @@ header{
 
 }
 
+/* Sección 4 */
 
+.section4{
+	height: 800px;
+	background-image: url(../image/section/bg-01.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
 
-/* seccion 7 */
+.texto2{
+	position: relative;
+	width: 40%;
+	margin: 0 auto 0 5%;
+}
 
+.texto2 h3{
+	color: black;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 50px;
+}
+
+.texto2 h4{
+	color: black;
+	font-weight: 100;
+	font-size: 1.8em;
+	opacity: 0.5;
+	line-height: 45px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.boton2{
+	color:black;
+	border-radius: 30px;
+	font-weight: 100;
+	font-size: 1.3em;
+	transition: 0.3s all;
+}
+
+/* sección 7 */
 
 .section7 .muralfotos{
 	position: relative;
@@ -273,7 +303,23 @@ header{
 	width: 85%;
 }
 
+.section8{
+	height: 500px;
+	background-color: black;
+	color: white;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
 
+.columna{
+	flex: 20%;
+	padding: 10px;
+}
+
+/* Footer */
 
 .footer{
     padding: 50px;
@@ -296,8 +342,7 @@ header{
 	display: none;
 }
 
-
-
+/* Responsive */
 
 @media screen and (max-width: 1212px) {
 
