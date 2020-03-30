@@ -233,22 +233,23 @@ header{
 
 }
 
-/* Sección 4 */
+/* Sección 2 */
 
-.section4{
-	height: 800px;
-	background-image: url(../image/section/bg-01.jpg);
-	background-position: center center;
+.section2{
+	width: 100%;
+	background-color: white;
+	/*background-image: url(../image/section/header-1.jpg);*/
+	background-position: left;
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
-	align-items: center;
+	align-items: left;
 }
 
 .texto2{
 	position: relative;
 	width: 40%;
-	margin: 0 auto 0 5%;
+	margin: 5% auto 20% 5%;
 }
 
 .texto2 h3{
@@ -267,6 +268,41 @@ header{
 	margin-top: 50px;
 	margin-bottom: 30px;
 }
+/* Sección 4 */
+
+.section4{
+	height: 800px;
+	background-color: black;
+	background-image: url(../image/section/bg-01.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+
+.texto4{
+	position: relative;
+	width: 40%;
+	margin: 0 auto 0 5%;
+}
+
+.texto4 h3{
+	color: black;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 50px;
+}
+
+.texto4 h4{
+	color: black;
+	font-weight: 100;
+	font-size: 1.8em;
+	opacity: 0.5;
+	line-height: 45px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
 
 .boton2{
 	color:black;
@@ -274,6 +310,11 @@ header{
 	font-weight: 100;
 	font-size: 1.3em;
 	transition: 0.3s all;
+}
+
+.boton2:hover{
+	color: #e10339;
+
 }
 
 /* sección 7 */
@@ -303,6 +344,8 @@ header{
 	width: 85%;
 }
 
+/* sección 8 */
+
 .section8{
 	height: 500px;
 	background-color: black;
@@ -312,9 +355,15 @@ header{
 	background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+}
+
+#arriba{
+	margin: 10px 0 0 10px;
 }
 
 .columna{
+	justify-content: center;
 	flex: 20%;
 	padding: 10px;
 }
