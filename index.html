@@ -6,7 +6,6 @@
 	<link  rel="icon" href="image/favicon/favicons.png" type="image/png" />
 	<meta name="description" content="Práctica 2ºTrimestre de la página https://demo.rockettheme.com/live/joomla/clarity/ ">	
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">  <!--Tipo de letra ASAP de Google Font-->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> <!--Icono de la flecha del menú-->
 </head>
 <style type="text/css">
@@ -26,110 +25,203 @@
 		}
 </script>
 <body>
-	<section> <!-- COMIENZO DEL MENÚ -->
-		<ul class="menu"> 
-			<li><img class="logo" title="Logo Clarity" src="image/logo.svg"></li>
-			<li><a href="#">HOME </a></li>
-			<li><a href="#">FEATURES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
-				<ul class="menu-content">
-					<li><a href="#"> OVERVIEW</a></li>
-					<li><a href="#"> PARTICLES</a></li>
-					<li><a href="#"> TYPOGRAPHY</a></li>
-					<li><a href="#"> BLOCK VARIATIONS</a></li>
-					<li><a href="#"> DOCUMENTATION</a></li>
-					<li><a href="#"> FORUM SUPPORT</a></li>
-					<li><a href="#"> DOWNLOAD</a></li>
-				</ul>
-			</li>
-			<li><a href="#">PAGES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
-				<ul class="menu-content">
-						<li><a href="#">ABOUT US</a></li>
-						<li><a href="#">PRICING</a></li>
-						<li><a href="#">PORTFOLIO</a></li>
-						<li><a href="#">BLOG</a></li>
-						<li><a href="#">CONTACT</a></li>
-						<li><a href="#">ERROR</a></li>
-						<li><a href="#">COMING SOON</a></li>
-						<li><a href="#">OFFLINE</a></li>
-				</ul>
-			</li>
-			<li><a href="#">STYLES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
-				<ul class="menu-content"> <!-- COMIENZO DE STYLE -->
-					<li class="menu-content">
-			   			<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#e10339">
-					    <img src="image/preset1.jpg"></a>
-				    </li>
-				    <li>
-				    	<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#3595be">
-				    	<img src="image/preset2.jpg"></a>
-		 			</li>
-		    		<li>
-				    	<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#42706d">
-		    			<img src="image/preset3.jpg"></a>
-		   			</li>
-		    		<li>
-				    	<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffcc5f">
-		    			<img src="image/preset4.jpg"></a>
-		    		</li>
-				</ul> <!-- FIN DEL STYLE -->
-			</li>
-		</ul>
-	</section> <!-- FINAL DEL MENÚ -->
-	<section>
-		<div class="foto1"> <!-- -->
-			<img src="image/fondo.jpg" title="Fondo mujer"> 
-				<div class="overlay_text">
-					<h3>Clarity is a beautiful mobile-first design featuring incredible typography, color, and imagery.</h3>
-					<h4>Dozens of particles make creating a stunning website that caters to your content easy. Your website will look perfect on mobile and desktop.</h4>
-				</div>
-				<a class="boton1" href="#" targed="Learn more">Learn more</a>
-		</div>			
-	</section>
-	<section class="section2">  <!-- Sección 2 , chico con sobrero -->
-		<div class="foto2">
-			<img src="image/header-1.jpg">
-		</div>
-		<div id="texto2">
-			<h4>MOBILE FIRST </h4>
-			<h3>The majority of the world’s internet traffic now occurs from smartphones and other mobile platforms.</h3>
-			<h3>Clarity takes a mobile-first approach to design, without sacrificing on its full-featured desktop user experience. Visitors will enjoy a natural user experience that works perfectly on any screen.</h3>
-		</div>
-	</section>
-	<section class="piePagina" >  <!-- PIE DE PÁGINA  -->
-		<div>
-			<div>
-				<h4>ABOUT</h4>
-				<div>About Rational</div>
-				<div>Our Projects</div>
-				<div>The Team</div>
-				<div>Jobs</div>
-				<div>Blog</div>
-				<div>Press</div>
-			</div>
-		</div>
-		<div> 
-			<div>
-				<h4>CONTACT</h4>
-				<div>Contac</div>
-				<div>Helpcenter</div>
-				<div>Our Offices</div>
-				<div>Facebook</div>
-				<div>Twitter</div>
-				<div>Instagram</div>
-			</div>
-		</div>
-		<div>
-			<div>
-				<h4>ONLINE</h4>
-				<div>Live Chat</div>
-				<div>(401) 123-4578</div>
-				<div>Send us an email</div>
-				<div>FAQ</div>
-				
-			</div>
-		</div>
 
-	</section> -->
+	<header>
+		<nav id="menu" class="red" > <!-- COMIENZO DEL MENÚ -->
+			<div class="logo ">
+				<img  title="Logo Clarity" src="image/logo/logo.svg">
+			</div>
+			<ul class="dropdown"> 
+				<li class="active"><a href="#">HOME </a></li>
+				<li><a href="#">FEATURES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+					<ul class="menu-content">
+						<li><a href="#"> OVERVIEW</a></li>
+						<li><a href="#"> PARTICLES</a></li>
+						<li><a href="#"> TYPOGRAPHY</a></li>
+						<li><a href="#"> BLOCK VARIATIONS</a></li>
+						<li><a href="#"> DOCUMENTATION</a></li>
+						<li><a href="#"> FORUM SUPPORT</a></li>
+						<li><a href="#"> DOWNLOAD</a></li>
+					</ul>
+				</li>
+				<li><a href="#">PAGES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+					<ul class="menu-content">
+							<li><a href="#">ABOUT US</a></li>
+							<li><a href="#">PRICING</a></li>
+							<li><a href="#">PORTFOLIO</a></li>
+							<li><a href="#">BLOG</a></li>
+							
+							<li><a href="#">CONTACT</a></li>
+							<li><a href="#">ERROR</a></li>
+							<li><a href="#">COMING SOON</a></li>
+							<li><a href="#">OFFLINE</a></li>
+					</ul>
+				</li>
+				<li><a href="#">STYLES <i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+					<ul class="menu-content-2"> <!-- COMIENZO DE STYLE -->
+						<li >
+				   			<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#e10339">
+						    <img src="image/menu/preset1.jpg"></a>
+					    </li>
+					    <li>
+					    	<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#3595be">
+					    	<img src="image/menu/preset2.jpg"></a>
+			 			</li>
+			    		<li>
+					    	<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#42706d">
+			    			<img src="image/menu/preset3.jpg"></a>
+			   			</li>
+			    		<li>
+					    	<a href="#" onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffcc5f">
+			    			<img src="image/menu/preset4.jpg"></a>
+			    		</li>
+					</ul> <!-- FIN DEL STYLE -->
+				</li>
+			</ul>
+		</nav> <!-- FINAL DEL MENÚ -->
+	</header>
+
+
+	<div class="section1"> <!-- Sección 1, foto de mujer -->
+		<div class="texto1">
+			<h3>Clarity is a beautiful mobile-first design featuring incredible typography, color, and imagery.</h3>
+			<h4 class="fuente1">Dozens of particles make creating a stunning website that caters to your content easy. Your website will look perfect on mobile and desktop.</h4>
+			<a class="boton1" href="#" targed="Learn more">Learn more</a>
+		</div>
+	</div>
+	<div class="section2">  <!-- Sección 2 , chico con sobrero -->
+		<img src="image/section/header-1.jpg" title="Fondo hombre con sombrero">
+			<div id="texto2">
+				<h4>MOBILE FIRST </h4>
+				<h3>The majority of the world’s internet traffic now occurs from smartphones and other mobile platforms.</h3>
+				<h3>Clarity takes a mobile-first approach to design, without sacrificing on its full-featured desktop user experience. Visitors will enjoy a natural user experience that works perfectly on any screen.</h3>
+			</div>
+	</div>
+
+
+	<section> <!-- Sección 3 , silla con pc -->
+		<div class="section3">
+			<img src="image/section/adove-1.jpg">
+			
+		</div>
+	</section>
+
+
+
+
+
+
+
+	<section> <!-- Sección 4, fotos verticales  -->
+		<div class="section4">
+			<img src="image/section/bg-01.jpg">
+		</div>
+	</section>
+
+
+
+
+
+	<section> <!-- Sección 5, fotos en columna  -->
+		<div class="section5">
+			
+		</div>
+	</section>
+
+
+
+	<section> <!-- Sección 6, Comentarios de los clientes  -->
+		<div class="section6">
+			
+		</div>
+	</section>
+
+
+	<!-- Sección 7, fotos con efecto  -->
+	<div class="section7">
+		<div class="muralfotos">
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-01.jpg" title="Image 1">
+			<img src="image/section7/img-01.jpg" alt=""></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-02.jpg" title="Image 2">
+			<img src="image/section7/img-02.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-03.jpg" title="Image 3">
+			<img src="image/section7/img-03.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-04.jpg" title="Image 4">
+			<img src="image/section7/img-04.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-05.jpg" title="Image 4">
+			<img src="image/section7/img-05.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-06.jpg" title="Image 6">
+			<img src="image/section7/img-06.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-07.jpg" title="Image 7">
+			<img src="image/section7/img-07.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-08.jpg" title="Image 8">
+			<img src="image/section7/img-08.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-09.jpg" title="Image 9">
+			<img src="image/section7/img-09.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-10.jpg" title="Image 10">
+			<img src="image/section7/img-10.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-11.jpg" title="Image 11">
+			<img src="image/section7/img-11.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-12.jpg" title="Image 12">
+			<img src="image/section7/img-12.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-13.jpg" title="Image 13">
+			<img src="image/section7/img-13.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-14.jpg" title="Image 14">
+			<img src="image/section7/img-14.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-15.jpg" title="Image 15">
+				<img src="image/section7/img-15.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-16.jpg" title="Image 16">
+			<img src="image/section7/img-16.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-17.jpg" title="Image 17">
+			<img src="image/section7/img-17.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-18.jpg" title="Image 19">
+			<img src="image/section7/img-18.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-19.jpg" title="Image 19">
+				<img src="image/section7/img-19.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-20.jpg" title="Image 20">
+			<img src="image/section7/img-20.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-21.jpg" title="Image 21">
+			<img src="image/section7/img-21.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-22.jpg" title="Image 22">
+			<img src="image/section7/img-22.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-23.jpg" title="Image 23">
+			<img src="image/section7/img-23.jpg"></a>
+			<a data-rel="lightcase:gallery-socialfeed-9871" href="/live/joomla/clarity/images/rocketlauncher/home/expanded/img-24.jpg" title="Image 24">
+			<img src="image/section7/img-24.jpg"></a>
+		</div>
+	</div>
+	<div class="piePagina"> <!-- PIE DE PÁGINA  -->
+		<div class="piePagina1">
+			<h1>Newsletter Particle</h1>
+			<h3>Never miss another subscriber with our MailChimp-ready newsletter particle, included with every copy of Clarity.</h3>
+			<form action="https://rockettheme.us18.list-manage.com/subscribe/post?u=b35dd217b76653582e6741a63&amp;id=80179a67c0" method="post" target="_blank" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate="novalidate">
+		</div>
+		<div id="columna">
+			<h4>ABOUT</h4>
+			<div>About Rational</div>
+			<div>Our Projects</div>
+			<div>The Team</div>
+			<div>Jobs</div>
+			<div>Blog</div>
+			<div>Press</div>
+		</div>
+		<div id="columna">
+			<h4>CONTACT</h4>
+			<div>Contac</div>
+			<div>Helpcenter</div>
+			<div>Our Offices</div>
+			<div>Facebook</div>
+			<div>Twitter</div>
+			<div>Instagram</div>
+		</div>
+		<div id="columna">
+			<h4>ONLINE</h4>
+			<div>Live Chat</div>
+			<div>(401) 123-4578</div>
+			<div>Send us an email</div>
+			<div>FAQ</div>
+		</div>
+	</div>
 	<section class="footer">
 		<div>&copy 2020 All rights reserved. Designed & Developed by RocketTheme.</div>
 	</section>
